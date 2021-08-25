@@ -14,9 +14,19 @@ new Swiper('#visual .swiper-container', {
 
 new Swiper('#movies .swiper-container', {
   loop: true,
-  // autoplay: {
-  //   delay: 5000
-  // },
+  autoplay: {
+    delay: 5000
+  },
   slidesPerView: 4,
   spaceBetween: 24
 });
+
+
+// NOTICE BUTTON 
+const noticeBtns = document.querySelectorAll('#info .notice .btn');
+
+noticeBtns.forEach(function (noticeBtn) {
+  noticeBtn.addEventListener('click', () => {
+    noticeBtn.classList.toggle('active');
+  })
+})
