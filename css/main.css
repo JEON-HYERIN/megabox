@@ -396,4 +396,45 @@ header .inner {
 }
 
 
+/* EVENTS */
+
+#events .inner {
+  padding: 100px 0;
+}
+
+#events h4 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#events .event {
+  display: flex;
+  justify-content: space-between;
+  height: 680px;
+  overflow: hidden;
+}
+
+#events .event img {
+  width: 100%;
+}
+
+#events .event .left {
+  flex-basis: 58%;
+}
+
+#events .event .left .season {
+  display: flex;
+}
+
+#events .event .left .season .coupon {
+  flex-basis: 50%;
+}
+
+#events .event .right {
+  flex-basis: 40%; 
+  
+}
+
+
 
