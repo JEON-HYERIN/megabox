@@ -10,3 +10,13 @@ new Swiper('#visual .swiper-container', {
     nextEl: '#visual .swiper-next'
   }
 });
+
+
+new Swiper('#movies .swiper-container', {
+  loop: true,
+  // autoplay: {
+  //   delay: 5000
+  // },
+  slidesPerView: 4,
+  spaceBetween: 24
+});
