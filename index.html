@@ -34,7 +34,7 @@
 
   <!-- VISUAL -->
   <section id="visual">
-
+    <h2 class="hide">광고영역</h2>
     <div class="links inner">
       <ul class="left">
         <li class="active"><a href="javascript:void(0)">전체메뉴</a></li>
@@ -51,7 +51,7 @@
 
         <div class="schedule-and-booking">
           <a href="javascript:void(0)" class="btn">상영시간표</a>
-          <a href="javascript:void(0)" class="btn selected">빠른예매</a>
+          <a href="javascript:void(0)" class="btn active">빠른예매</a>
         </div>
       </div>
     </div>
@@ -79,18 +79,19 @@
 
   <!-- MOVIES -->
   <section id="movies">
+    <h2 class="hide">영화정보</h2>
     <div class="inner">
       <ul class="movies__menu">
-        <li><button class="btn">박스오피스</button></li>
-        <li><button class="btn">최신개봉작</button></li>
-        <li><button class="btn">상영예정작</button></li>
-        <li><button class="btn">큐레이션</button></li>
+        <li><button class="btn btn--gray active">박스오피스</button></li>
+        <li><button class="btn btn--gray">최신개봉작</button></li>
+        <li><button class="btn btn--gray">상영예정작</button></li>
+        <li><button class="btn btn--gray">큐레이션</button></li>
       </ul>
 
       <div class="movie">
         <div class="movie__information">
           <img src="./img/poster03@2.jpg" alt="" class="poster" />
-          <h4>마스터</h4>
+          <h5>마스터</h5>
           <div class="btn-group">
             <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
             <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
@@ -98,7 +99,7 @@
         </div>
         <div class="movie__information">
           <img src="./img/poster03@2.jpg" alt="" class="poster" />
-          <h4>마약왕</h4>
+          <h5>마약왕</h5>
           <div class="btn-group">
             <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
             <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
@@ -106,7 +107,7 @@
         </div>
         <div class="movie__information">
           <img src="./img/poster04@2.jpg" alt="" class="poster" />
-          <h4>her</h4>
+          <h5>her</h5>
           <div class="btn-group">
             <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
             <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
@@ -114,7 +115,7 @@
         </div>
         <div class="movie__information">
           <img src="./img/poster06@2.jpg" alt="" class="poster" />
-          <h4>괴물</h4>
+          <h5>괴물</h5>
           <div class="btn-group">
             <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
             <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
@@ -127,8 +128,9 @@
 
   <!-- EVENTS -->
   <section id="events">
+    <h2 class="hide">이벤트</h2>
     <div class="inner">
-      <h5>새로운 이벤트</h5>
+      <h4>새로운 이벤트</h4>
       <div class="event">
 
         <div class="left">
@@ -153,8 +155,9 @@
   </section>
 
 
-  <!-- GRAND-OPENING -->
+  <!-- GRAND OPENING -->
   <setcion id="grand-opening">
+    <h2 class="hide">리뉴얼 오픈 극장</h2>
     <div class="inner">
 
       <div class="text">
@@ -188,8 +191,125 @@
       </div>
     </div>
   </setcion>
-  <section id="coming-soon"></section>
-  <section id="info"></section>
+
+
+  <!-- INFO -->
+  <section id="info">
+    <h2 class="hide">주요서비스</h2>
+    <div class="inner">
+
+      <div class="top">
+        <h4>새로운 영화</h4>
+        <div class="video"></div>
+        <div class="video-info">
+          <div class="text-group">
+            <h4>로그 원: 스타워즈 스토리</h4>
+            <span class="date">2021년 10월 28일 개봉</span>
+            <span class="mark">7.5/10</span>
+            <span class="nation">액션미국, 오스트레일리아</span>
+            <span class="running-time">142분 12세 이상 관람가</span>
+            <p class="story">단숨에 행성 하나를 파괴할 위력을 지닌 데스 스타가 완성되기 전에 설계도를 훔쳐내야 하는 이번 작전의 성공 확률은 고작 2.4%. 생사도 모르는 아버지에 얽힌
+              비밀을
+              밝히려는 진을 ...비롯해 유능한 정보 요원 ‘카시안’(디에고 루나), 두 눈이 멀었지만 탁월한 무술 실력을 지닌 ‘치루</p>
+          </div>
+          <div class="reservation">
+            <select>
+              <option>2021년 10월 28일</option>
+            </select>
+            <input type="time" value="00:00:00">
+            <input type="text" placeholder="주소 또는 도로명을 입력해주세요.">
+            <div class="btn-group">
+              <button class="btn">좌석 확인</button>
+              <a href="javascript:void(0)" class="btn active">예매하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="notice">
+          <h4>공지사항</h4>
+          <div>
+            <div class="btn-group">
+              <button class="btn">전체공지</button>
+              <button class="btn">영화관 공지</button>
+              <div class="text-group">
+                <div class="text">
+                  <span class="title">전체</span><span class="date">2021.09.01</span>
+                  <p>[무대인사] (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1</p>
+                </div>
+                <div class="text">
+                  <span class="title">전체</span><span class="date">2021.09.01</span>
+                  <p>[무대인사] (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1</p>
+                </div>
+                <div class="text">
+                  <span class="title">전체</span><span class="date">2021.09.01</span>
+                  <p>[무대인사] (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1</p>
+                </div>
+                <div class="text">
+                  <span class="title">전체</span><span class="date">2021.09.01</span>
+                  <p>[무대인사] (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="membership">
+          <h4>메가박스 할인카드</h4>
+          <div>
+            <div class="card">
+              <div class="image">
+                <img src="./img/card01@2.jpg" alt="card" />
+              </div>
+              <div class="text">
+                <div class="title"></div>
+                <a href="javascript:void(0)" class="description">영화 2,000원 현장 즉시 할인(1일 5매)</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="./img/card02@2.jpg" alt="card" />
+              </div>
+              <div class="text">
+                <div class="title"></div>
+                <a href="javascript:void(0)" class="description">영화 2,000원 현장 즉시 할인(1일 5매)</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="./img/card03@2.jpg" alt="card" />
+              </div>
+              <div class="text">
+                <div class="title"></div>
+                <a href="javascript:void(0)" class="description">영화 2,000원 현장 즉시 할인(1일 5매)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inquiry">
+          <h4>고객센터</h4>
+          <div class="box">
+            <div>
+              <span class="text">1:1 문의</span>
+            </div>
+            <div>
+              <span class="text">단체관람</span>
+            </div>
+            <div>
+              <span class="text">자주묻는 질문</span>
+            </div>
+            <div>
+              <span class="text">분실물 문의</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <footer></footer>
 </body>
 </html>
