@@ -8,7 +8,13 @@
   <link rel="icon" href="./icons/favicon_72.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/254318af28.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <link rel="stylesheet" href="./css/main.css">
   <script defer src="./js/main.js"></script>
 </head>
@@ -38,47 +44,65 @@
   <!-- VISUAL -->
   <section id="visual">
     <h2 class="hide">광고영역</h2>
-    <div class="links inner">
-      <ul class="left">
-        <li class="active"><a href="javascript:void(0)">전체메뉴</a></li>
-        <li><a href="javascript:void(0)">필름 소사이어티</a></li>
-        <li><a href="javascript:void(0)">클래식 소사이어티</a></li>
-      </ul>
-
-      <div class="right">
-        <ul class="about">
-          <li><a href="javascript:void(0)">고객센터</a></li>
-          <li><a href="javascript:void(0)">멤버쉽</a></li>
-          <li><a href="javascript:void(0)">VIP</a></li>
-        </ul>
-
-        <div class="schedule-and-booking">
-          <a href="javascript:void(0)" class="btn">상영시간표</a>
-          <a href="javascript:void(0)" class="btn active">빠른예매</a>
-        </div>
-      </div>
-    </div>
-
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="movie-introduction first">
+        <div class="swiper-slide slide1">
+          <div class="movie-introduction">
             <h3>어벤져스 : 앤드게임</h3>
             <p>역대 최단 기간 1000만 관객 돌파 기록</p>
           </div>
-          <!-- <div class="movie-introduction second">
-            <h4>어벤져스 : 앤드게임</h4>
+        </div>
+        <div class="swiper-slide slide2">
+          <div class="movie-introduction">
+            <h3>어벤져스 : 앤드게임</h3>
             <p>역대 최단 기간 1000만 관객 돌파 기록</p>
           </div>
-          <div class="movie-introduction third">
-            <h4>어벤져스 : 앤드게임</h4>
+        </div>
+        <div class="swiper-slide slide3">
+          <div class="movie-introduction">
+            <h3>어벤져스 : 앤드게임</h3>
             <p>역대 최단 기간 1000만 관객 돌파 기록</p>
-          </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-prev">
+        <span class="material-icons">
+          arrow_back_ios
+          </span>
+          
+      </div>
+      <div class="swiper-next">
+        <span class="material-icons">
+          arrow_forward_ios
+          </span>
+      </div>
+    </div>
+    <div class="links">
+      <div class="inner">
+        <ul class="left">
+          <li class="active"><a href="javascript:void(0)">전체메뉴</a></li>
+          <li><a href="javascript:void(0)">필름 소사이어티</a></li>
+          <li><a href="javascript:void(0)">클래식 소사이어티</a></li>
+        </ul>
+
+        <div class="right">
+          <ul class="about">
+            <li><a href="javascript:void(0)">고객센터</a></li>
+            <li><a href="javascript:void(0)">멤버쉽</a></li>
+            <li><a href="javascript:void(0)">VIP</a></li>
+          </ul>
+
+          <div class="btn-group">
+            <a href="javascript:void(0)" class="btn btn--white">상영시간표</a>
+            <a href="javascript:void(0)" class="btn active">빠른예매</a>
+          </div>
         </div>
       </div>
     </div>
-  </section>
 
+  </section>
 
   <!-- MOVIES -->
   <section id="movies">
