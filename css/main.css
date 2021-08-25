@@ -573,6 +573,19 @@ header .inner {
   color: #333;
 }
 
+#info .top .video-info .text-group .star .icon {
+  background-image: url('../img/icon@2.png');
+  background-size: 500px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -3px;
+}
+
+#info .top .video-info .text-group .star .icon.icon1 {background-position: -393px 0;}
+#info .top .video-info .text-group .star .icon.icon2 {    background-position: -412px 0;}
+#info .top .video-info .text-group .star .icon.icon0 {background-position: -374px 0;}
+
 #info .top .video-info .text-group .mark {
   font-size: 18px;
   font-weight: 700;
