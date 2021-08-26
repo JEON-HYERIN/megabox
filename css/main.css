@@ -114,6 +114,7 @@ header .inner {
   font-size: 15px;
   font-weight: 700;
   position: relative;
+  width: 103px;
 }
 
 
@@ -138,9 +139,9 @@ header .inner {
 }
 
 .header__menu li a {
-  flex-basis: 25%;
+  /* flex-basis: 25%; */
   display: block;
-  padding: 16px 20px;
+  padding: 19px 10px;
   color:#444;
 }
 
@@ -162,6 +163,7 @@ header .inner {
   background-size: cover;
 }
 
+#visual .swiper-slide.slide0 {background-image: url("../img/main_slider01.jpg");}
 #visual .swiper-slide.slide1 {background-image: url("../img/main_slider01_2000.jpg");}
 #visual .swiper-slide.slide2 {background-image: url("../img/main_slider02_2000.jpg");}
 #visual .swiper-slide.slide3 {background-image: url("../img/main_slider03_2000.jpg");}
