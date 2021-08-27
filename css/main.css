@@ -1035,6 +1035,25 @@ footer .right .call span {
     display: none;
   }
 
+  .header__menu.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 51px;
+    right: 10px;
+    background-color: #3A0E6A;
+    z-index: 9;
+  }
+
+  .header__menu.open li a {
+    color: #fafafa;
+  }
+
+  .header__menu.open li::before,
+  .header__menu li:last-child::after {
+    display: none;
+  }
+
   .toggle-btn {
     display: block;
   }
@@ -1042,9 +1061,9 @@ footer .right .call span {
 
   /* VISUAL */
   #visual {
-    /* margin-top: 50px; */
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 50px;
+    /* max-width: 1200px;
+    margin: 50px auto 0; */
     position: relative;
     overflow: hidden;
   }
@@ -1104,8 +1123,8 @@ footer .right .call span {
 
   #movies .inner {
     background-color: #fff;
-    margin-right: 0;
-    padding-right: 0;
+    /* margin-right: 0;
+    padding-right: 0; */
   }
 
   #movies .movies__menu {
@@ -1133,6 +1152,10 @@ footer .right .call span {
     color: #666;
     border: none;
     background-color: transparent;
+  }
+
+  #movies .swiper-container {
+    /* max-width: 450px; */
   }
 
   #movies .swiper-container .swiper-slide .movie {
@@ -1288,5 +1311,4 @@ footer .right {
 footer .right .call {
   display: none;
 }
-
 }

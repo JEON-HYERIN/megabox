@@ -50,9 +50,9 @@ new Swiper('#movies .swiper-container', {
     //   spaceBetween: 24,
     // }
   },
-      mousewheel: {
-        invert: true,
-  },
+  //     mousewheel: {
+  //       invert: true,
+  // },
 });
 
 
@@ -65,3 +65,16 @@ noticeBtns.forEach(function (noticeBtn) {
   })
 })
 
+
+// TOGGLE BUTTON
+const toggleBtn = document.querySelector('.toggle-btn');
+const headerMenuEl = document.querySelector('.header__menu');
+toggleBtn.addEventListener('click', () => {
+  headerMenuEl.classList.toggle('open');
+});
+
+
+headerMenuEl.addEventListener('click', function (event) {
+  const links = event.target.dataset.links;
+  console.log(links);
+});
