@@ -989,6 +989,33 @@ footer .right .call span {
 }
 
 
+/* ARROW UP */
+.arrow-up {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: #3A0E6A;
+  color: #fafafa;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 9;
+  opacity: 0;
+  transition: opacity 350ms;
+  pointer-events: none;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
 /* 미디어쿼리 */
 @media screen and (max-width: 768px) {
   /* COMMON */
@@ -1037,10 +1064,11 @@ footer .right .call span {
 
   .header__menu.open {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     position: absolute;
     top: 51px;
-    right: 10px;
+    left: 0;
+    right: 0;
     background-color: #3A0E6A;
     z-index: 9;
   }

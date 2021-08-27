@@ -75,6 +75,25 @@ toggleBtn.addEventListener('click', () => {
 
 
 headerMenuEl.addEventListener('click', function (event) {
-  const links = event.target.dataset.links;
+  const links = event.target.dataset.link;
   console.log(links);
+});
+
+
+// ARROW UP BUTTON
+const arrowUpBtn = document.querySelector('.arrow-up'); 
+const visualEl = document.querySelector('#visual');
+arrowUpBtn.addEventListener('click', function () {
+  visualEl.scrollIntoView({behavior: "smooth"});
+});
+
+
+// ARROW UP BUTTON 숨기기
+const visualElHeight = visualEl.getBoundingClientRect().height;
+window.addEventListener('scroll', () => {
+  if ( window.scrollY > visualElHeight / 2) {
+    arrowUpBtn.classList.add('visible');
+  } else {
+    arrowUpBtn.classList.remove('visible');
+  }
 });
