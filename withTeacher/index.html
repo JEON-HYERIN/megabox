@@ -12,8 +12,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&display=swap" rel="stylesheet">
 
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/swiper.css">
   <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/swiper.min.js"></script>
   <script defer src="./js/main.js"></script>
 </head>
 <body>
@@ -29,9 +35,13 @@
               <strong><img src="./img/logo-sub.png" alt="LIFE THEATER" /></strong>
             </a>
           </h1>
+          <nav id="mNav">
+            <h2 class="ir_su">메가박스 전체메뉴</h2>
+            <a href="#" class="ham"><span></span></a>
+          </nav>
 
           <!-- NAV -->
-          <nav>
+          <nav class="nav">
             <ul class="clearfix">
               <li><a href="javascript:void(0)">영화</a></li>
               <li><a href="javascript:void(0)">큐레이션</a></li>
@@ -45,6 +55,7 @@
         </div>
       </div>
     </div>
+    
   </header>
 <!-- //HEADER -->
 
@@ -77,10 +88,19 @@
     </div>
   </div>
   <div class="slider">
-    <img src="./img/main_slider01.jpg" alt="베스와 베라" />
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide ss1">1</div>
+        <div class="swiper-slide ss2">2</div>
+        <div class="swiper-slide">3</div>
+      </div>
+    </div>
+    <!-- <img src="./img/main_slider01.jpg" alt="베스와 베라" /> -->
   </div>
 </section>
 <!-- //BANNER -->
   
+
+
 </body>
 </html>
