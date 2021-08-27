@@ -149,7 +149,7 @@ header .inner {
 /* TOGGLE BTN */
 .toggle-btn {
   position: absolute;
-  right: 37px;
+  right: 33px;
   top: 7px;
   font-size: 25px;
   color: #3A0E6A;
@@ -612,7 +612,7 @@ header .inner {
 
 #info .top .video {
   flex-basis: 68%;
-  height: 500px;
+  max-height: 500px;
 }
 
 #info .top .video img {
@@ -1046,6 +1046,7 @@ footer .right .call span {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
   }
 
   #visual .links {
@@ -1103,6 +1104,8 @@ footer .right .call span {
 
   #movies .inner {
     background-color: #fff;
+    margin-right: 0;
+    padding-right: 0;
   }
 
   #movies .movies__menu {
@@ -1208,6 +1211,9 @@ footer .right .call span {
   #info .top {
     flex-direction: column;
     padding-bottom: 16px;
+    border-bottom: 4px solid #d9d7e0;
+    margin-bottom: 16px;
+    box-sizing: border-box;
   }
 
   #info .top .video-info .text-group h4 {
@@ -1218,7 +1224,7 @@ footer .right .call span {
     flex-direction: column;
   }
 
-  #info .bottom .notice,
+#info .bottom .notice,
 #info .bottom .membership,
 #info .bottom .inquiry {
   flex-basis: auto;
@@ -1226,12 +1232,18 @@ footer .right .call span {
   padding-bottom: 16px;
 }
 
+#info .bottom .notice,
+#info .bottom .membership {
+  border-bottom: 4px solid #d9d7e0;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
 
 /* FOOTER */
 footer .inner {
   flex-direction: column;
   align-items: center;
-  margin-top: 8px;
 }
 
 footer .left {
