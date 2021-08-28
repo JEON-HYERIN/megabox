@@ -40,13 +40,13 @@
       </div>
 
       <ul class="header__menu">
-        <li class="header__menu__item" data-link="#movies"><a href="javascript:void(0)">영화</a></li>
-        <li class="header__menu__item" data-link="#info"><a href="javascript:void(0)">큐레이션</a></li>
-        <li class="header__menu__item" data-link="#info"><a href="javascript:void(0)">영화관</a></li>
-        <li class="header__menu__item" data-link="#grand-opening"><a href="javascript:void(0)">특별관</a></li>
-        <li class="header__menu__item" data-link="#info"><a href="javascript:void(0)">스토어</a></li>
-        <li class="header__menu__item" data-link="#events"><a href="javascript:void(0)">이벤트</a></li>
-        <li class="header__menu__item" data-link="header"><a href="javascript:void(0)">로그인</a></li>
+        <li class="header__menu__item" data-link="#movies">영화</li>
+        <li class="header__menu__item" data-link="#visual">큐레이션</li>
+        <li class="header__menu__item" data-link="#info">영화관</li>
+        <li class="header__menu__item" data-link="#grand-opening">특별관</li>
+        <li class="header__menu__item" data-link="footer">스토어</li>
+        <li class="header__menu__item" data-link="#events">이벤트</li>
+        <li class="header__menu__item" data-link="#visual">로그인</li>
       </ul>
 
     </div>
@@ -139,7 +139,7 @@
     <h2 class="hide">영화정보</h2>
     <div class="inner">
       <ul class="movies__menu">
-        <li><button class="btn btn--gray active" data-filter="*">박스오피스</button></li>
+        <li><button class="btn btn--gray selected" data-filter="*">박스오피스</button></li>
         <li><button class="btn btn--gray" data-filter="chart1">최신개봉작</button></li>
         <li><button class="btn btn--gray" data-filter="chart2">상영예정작</button></li>
         <li><button class="btn btn--gray" data-filter="chart3">큐레이션</button></li>
@@ -622,25 +622,44 @@
           <h4>공지사항</h4>
           <div>
             <div class="btn-group">
-              <button class="btn">전체공지</button>
-              <button class="btn active">영화관 공지</button>
+              <button class="btn" data-filter="all-notice">전체공지</button>
+              <button class="btn active" data-filter="cinema-notice">영화관 공지</button>
             </div>
-            <div class="text-group">
+            <div class="text-group" data-type="all-notice">
               <div class="text">
                 <span class="title">전체</span><span class="date">2021.09.01</span>
                 <p>[무대인사] (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1</p>
               </div>
               <div class="text">
-                <span class="title">전체</span><span class="date">2021.09.01</span>
-                <p>[무대인사] (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1</p>
+                <span class="title">강남</span><span class="date">2021.09.01</span>
+                <p>[라이브뷰잉] 플라잉독 10주년 기념 라이브 10주년 기념 라이브 10주년 기념 라이브..</p>
+              </div>
+              <div class="text">
+                <span class="title">안양</span><span class="date">2021.09.01</span>
+                <p>[무대인사] (내 안의 그놈) 1주차 1주차 1주차 1주차 1주차 1주차 1주차 1주차</p>
               </div>
               <div class="text">
                 <span class="title">전체</span><span class="date">2021.09.01</span>
+                <p>[공지] 2019년 1월 VIP 미션 이벤트 1월 VIP 미션 이벤트 1월 VIP 미션 이벤트</p>
+              </div>
+            </div>
+
+            <div class="text-group" data-type="cinema-notice">
+              <div class="text">
+                <span class="title">전체</span><span class="date">2021.09.01</span>
+                <p>[무대인사] (내 안의 그놈) 1주차 1주차 1주차 1주차 1주차 1주차 1주차 1주차</p>
+              </div>
+              <div class="text">
+                <span class="title">강남</span><span class="date">2021.09.01</span>
                 <p>[무대인사] (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1</p>
               </div>
               <div class="text">
+                <span class="title">안양</span><span class="date">2021.09.01</span>
+                <p>[라이브뷰잉] 플라잉독 10주년 기념 라이브 10주년 기념 라이브 10주년 기념 라이브..</p>
+              </div>
+              <div class="text">
                 <span class="title">전체</span><span class="date">2021.09.01</span>
-                <p>[무대인사] (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1주차~ (뺑반) 1</p>
+                <p>[공지] 2019년 1월 VIP 미션 이벤트 1월 VIP 미션 이벤트 1월 VIP 미션 이벤트</p>
               </div>
             </div>
 

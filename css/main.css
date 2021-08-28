@@ -121,6 +121,9 @@ header .inner {
   font-weight: 700;
   position: relative;
   width: 93px;
+  cursor: pointer;
+  padding: 19px 0;
+  color: #444;
 }
 
 
@@ -418,7 +421,7 @@ header .inner {
   cursor: pointer;
 }
 
-#movies .movies__menu li .btn.btn--gray.active {
+#movies .movies__menu li .btn.btn--gray.selected {
   background-color: #666;
   color: #fafafa;
   border: 1px solid #666;
@@ -798,6 +801,7 @@ header .inner {
   border: 1px solid #dbdbdb;
   padding: 17px;
   height: 350px;
+  overflow: hidden;
 }
 
 #info .bottom .notice>div .btn-group {
@@ -819,7 +823,13 @@ header .inner {
   background-color: #f5f5f5;
 }
 
-#info .bottom .notice>div .text-group {}
+#info .bottom .notice>div .text-group {
+  
+}
+
+#info .bottom .notice>div .text-group.invisible {
+  display: none;
+}
 
 #info .bottom .notice>div .text-group .text {
   padding: 17px;
@@ -1125,6 +1135,7 @@ footer .right .call span {
 
   .header__menu.open li {
     font-size: 10px;
+    color: #fafafa;
   }
 
   .header__menu.open li a {
@@ -1152,7 +1163,7 @@ footer .right .call span {
 
   #visual .links {
     left: 30px;
-    top: 300px;
+    top: 370px;
   }
 
   #visual .links .left,
@@ -1231,7 +1242,7 @@ footer .right .call span {
     border: none;
   }
 
-  #movies .movies__menu li .btn.btn--gray.active {
+  #movies .movies__menu li .btn.btn--gray.selected {
     color: #666;
     border: none;
     background-color: transparent;

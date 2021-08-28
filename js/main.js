@@ -185,17 +185,34 @@ new Swiper('#movies .swiper-container.chart3', {
   // },
 })
 
+//  NOTICE FILITERING & NOTICE BUTTON 
+const noticeBtnContainer = document.querySelector('.notice .btn-group');
+const noticeTextContainer = document.querySelectorAll('.notice .text-group');
+noticeBtnContainer.addEventListener('click', e => {
+  // NOTICE FILITERING
+  const filter = e.target.dataset.filter;
+  console.log(filter);
+  if (filter === null) {
+    return;
+  }
+  
+  noticeTextContainer.forEach(function (text) {
+    if (filter === text.dataset.type) {
+      text.classList.remove('invisible');
+    } else {
+      text.classList.add('invisible');
+    }
+  });
+
+  // NOTICE BUTTON 
+  const noticeBtn = noticeBtnContainer.querySelector('.btn.active');
+  if (noticeBtn != null) {
+    noticeBtn.classList.remove('active');
+  } e.target.classList.add('active');
+});
 
 
 
-// NOTICE BUTTON 
-const noticeBtns = document.querySelectorAll('#info .notice .btn');
-
-noticeBtns.forEach(function (noticeBtn) {
-  noticeBtn.addEventListener('click', () => {
-    noticeBtn.classList.toggle('active');
-  })
-})
 
 
 // TOGGLE BUTTON
@@ -208,7 +225,7 @@ toggleBtn.addEventListener('click', () => {
 
 headerMenuEl.addEventListener('click', function (event) {
   const links = event.target.dataset.link;
-  console.log(links);
+  // console.log(links);
 });
 
 
@@ -236,12 +253,20 @@ const moviesMenu = document.querySelector('#movies .movies__menu');
 const slides = document.querySelectorAll('#movies .swiper-container');
 moviesMenu.addEventListener('click', function (event) {
   const filter = event.target.dataset.filter;
-  console.log('filter:',filter);
+  // console.log('filter:', filter);
   if (filter === null) {
     return;
   }
+  // MOVIES SELECTED BUTTON
+  const active = moviesMenu.querySelector('.btn.selected');
+  if (active != null) {
+    active.classList.remove('selected');
+  }
+  event.target.classList.add('selected');
+
+
   slides.forEach(function (slide) {
-    console.log('type:',slide.dataset.type);
+    // console.log('type:', slide.dataset.type);
     if (filter === slide.dataset.type) {
       slide.classList.remove('invisible');
     } else {
@@ -249,3 +274,24 @@ moviesMenu.addEventListener('click', function (event) {
     };
   });
 });
+
+
+// HEADER MENU BUTTON
+headerMenuEl.addEventListener('click', function (event) {
+  const link = event.target.dataset.link;
+  console.log(link);
+
+  if (link === null) {
+    return;
+  } else {
+    scrollIntoView(link);
+  }
+});
+
+
+
+
+function scrollIntoView (selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({behavior:"smooth"});
+}
