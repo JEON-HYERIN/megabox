@@ -14,11 +14,9 @@ new Swiper('#visual .swiper-container', {
 
 
 // MOVIES 슬라이드
-new Swiper('#movies .swiper-container', {
+new Swiper('#movies .swiper-container.all', {
   loop: true,
-  autoplay: {
-    delay: 5000
-  },
+  autoplay: true,
   slidesPerView: 4,
   spaceBetween: 24,
   breakpoints: {
@@ -54,6 +52,140 @@ new Swiper('#movies .swiper-container', {
   //       invert: true,
   // },
 });
+
+new Swiper('#movies .swiper-container.chart1', {
+  // loop: true,
+  // autoplay: {
+  //   delay: 6000
+  // },
+  slidesPerView: 4,
+  spaceBetween: 24,
+  //       mousewheel: {
+  //       invert: true,
+  // },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    960: {
+      slidesPerView: 4,
+      spaceBetween: 24
+    },
+    // 1200: {
+    //   slidesPerView: 4,
+    //   spaceBetween: 24,
+    // }
+  },
+  //     mousewheel: {
+  //       invert: true,
+  // },
+})
+
+new Swiper('#movies .swiper-container.chart2', {
+  // loop: true,
+  // autoplay: {
+  //   delay: 7000
+  // },
+  slidesPerView: 4,
+  spaceBetween: 24,
+  //       mousewheel: {
+  //       invert: true,
+  // },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    960: {
+      slidesPerView: 4,
+      spaceBetween: 24
+    },
+    // 1200: {
+    //   slidesPerView: 4,
+    //   spaceBetween: 24,
+    // }
+  },
+  //     mousewheel: {
+  //       invert: true,
+  // },
+})
+
+new Swiper('#movies .swiper-container.chart3', {
+  // loop: true,
+  // autoplay: {
+  //   delay: 8000
+  // },
+  slidesPerView: 4,
+  spaceBetween: 24,
+  //       mousewheel: {
+  //       invert: true,
+  // },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    960: {
+      slidesPerView: 4,
+      spaceBetween: 24
+    },
+    // 1200: {
+    //   slidesPerView: 4,
+    //   spaceBetween: 24,
+    // }
+  },
+  //     mousewheel: {
+  //       invert: true,
+  // },
+})
+
+
 
 
 // NOTICE BUTTON 
@@ -96,4 +228,24 @@ window.addEventListener('scroll', () => {
   } else {
     arrowUpBtn.classList.remove('visible');
   }
+});
+
+
+// MOVIES FILTERING
+const moviesMenu = document.querySelector('#movies .movies__menu');
+const slides = document.querySelectorAll('#movies .swiper-container');
+moviesMenu.addEventListener('click', function (event) {
+  const filter = event.target.dataset.filter;
+  console.log('filter:',filter);
+  if (filter === null) {
+    return;
+  }
+  slides.forEach(function (slide) {
+    console.log('type:',slide.dataset.type);
+    if (filter === slide.dataset.type) {
+      slide.classList.remove('invisible');
+    } else {
+      slide.classList.add('invisible');
+    };
+  });
 });

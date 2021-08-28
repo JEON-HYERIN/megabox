@@ -139,13 +139,13 @@
     <h2 class="hide">영화정보</h2>
     <div class="inner">
       <ul class="movies__menu">
-        <li><button class="btn btn--gray active">박스오피스</button></li>
-        <li><button class="btn btn--gray">최신개봉작</button></li>
-        <li><button class="btn btn--gray">상영예정작</button></li>
-        <li><button class="btn btn--gray">큐레이션</button></li>
+        <li><button class="btn btn--gray active" data-filter="*">박스오피스</button></li>
+        <li><button class="btn btn--gray" data-filter="chart1">최신개봉작</button></li>
+        <li><button class="btn btn--gray" data-filter="chart2">상영예정작</button></li>
+        <li><button class="btn btn--gray" data-filter="chart3">큐레이션</button></li>
       </ul>
 
-      <div class="swiper-container">
+      <div class="swiper-container all " data-type="*"> 
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./img/poster01@2.jpg" alt="" class="poster" />
@@ -295,6 +295,207 @@
                 <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
               </div>
               <div class="rank">10</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MOVIE CHART1 -->
+      <div class="swiper-container chart1 invisible" data-type="chart1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/poster09@2.jpg" alt="" class="poster" />
+            <div class="movie">
+              <div class="title">
+                <img src="./img/A.PNG" alt="" class="icon" />
+                <h5>MOONLIGHT</h5>
+              </div>
+
+              <div class="btn-group">
+                <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
+                <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
+              </div>
+              <div class="rank">1</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/poster10@2.jpg" alt="" class="poster" />
+            <div class="movie">
+              <div class="title">
+                <img src="./img/12.PNG" alt="" class="icon" />
+                <h5>보헤미안랩소디</h5>
+              </div>
+
+              <div class="btn-group">
+                <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
+                <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
+              </div>
+              <div class="rank">2</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/poster05@2.jpg" alt="" class="poster" />
+            <div class="movie">
+              <div class="title">
+                <img src="./img/19.PNG" alt="" class="icon" />
+                <h5>her</h5>
+              </div>
+
+              <div class="btn-group">
+                <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
+                <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
+              </div>
+              <div class="rank">3</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/poster03@2.jpg" alt="" class="poster" />
+            <div class="movie">
+              <div class="title">
+                <img src="./img/15.PNG" alt="" class="icon" />
+                <h5>마스터</h5>
+              </div>
+
+              <div class="btn-group">
+                <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
+                <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
+              </div>
+              <div class="rank">4</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MOVIE CHART2 -->
+      <div class="swiper-container chart2 invisible" data-type="chart2">
+        <div class="swiper-wrapper" >
+          <div class="swiper-slide">
+            <img src="./img/poster04@2.jpg" alt="" class="poster" />
+            <div class="movie">
+              <div class="title">
+                <img src="./img/15.PNG" alt="" class="icon" />
+                <h5>마약왕</h5>
+              </div>
+
+              <div class="btn-group">
+                <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
+                <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
+              </div>
+              <div class="rank">1</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/poster02@2.jpg" alt="" class="poster" />
+            <div class="movie">
+              <div class="title">
+                <img src="./img/19.PNG" alt="" class="icon" />
+                <h5>신세계</h5>
+              </div>
+
+              <div class="btn-group">
+                <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
+                <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
+              </div>
+              <div class="rank">2</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/poster08@2.jpg" alt="" class="poster" />
+            <div class="movie">
+              <div class="title">
+                <img src="./img/19.PNG" alt="" class="icon" />
+                <h5>GETOUT</h5>
+              </div>
+
+              <div class="btn-group">
+                <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
+                <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
+              </div>
+              <div class="rank">3</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/poster06@2.jpg" alt="" class="poster" />
+            <div class="movie">
+              <div class="title">
+                <img src="./img/A.PNG" alt="" class="icon" />
+                <h5>괴물</h5>
+              </div>
+
+              <div class="btn-group">
+                <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
+                <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
+              </div>
+              <div class="rank">4</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MOVIE CHART3 -->
+      <div class="swiper-container chart3 invisible" data-type="chart3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/poster07@2.jpg" alt="" class="poster" />
+            <div class="movie">
+              <div class="title">
+                <img src="./img/15.PNG" alt="" class="icon" />
+                <h5>꼭두각시</h5>
+              </div>
+
+              <div class="btn-group">
+                <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
+                <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
+              </div>
+              <div class="rank">1</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/poster03@2.jpg" alt="" class="poster" />
+            <div class="movie">
+              <div class="title">
+                <img src="./img/15.PNG" alt="" class="icon" />
+                <h5>마스터</h5>
+              </div>
+
+              <div class="btn-group">
+                <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
+                <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
+              </div>
+              <div class="rank">2</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/poster09@2.jpg" alt="" class="poster" />
+            <div class="movie">
+              <div class="title">
+                <img src="./img/A.PNG" alt="" class="icon" />
+                <h5>MOONLIGHT</h5>
+              </div>
+
+              <div class="btn-group">
+                <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
+                <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
+              </div>
+              <div class="rank">3</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/poster01@2.jpg" alt="" class="poster" />
+            <div class="movie">
+              <div class="title">
+                <img src="./img/19.PNG" alt="" class="icon" />
+                <h5>침묵</h5>
+              </div>
+
+              <div class="btn-group">
+                <a href="javascript:void(0)" class="btn btn--gray">상세정보</a>
+                <a href="javascript:void(0)" class="btn btn--gray">예매하기</a>
+              </div>
+              <div class="rank">4</div>
             </div>
           </div>
 
