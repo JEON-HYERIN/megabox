@@ -289,6 +289,9 @@ headerMenuEl.addEventListener('click', function (event) {
 });
 
 
+// THIS YEAR
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();
 
 
 function scrollIntoView (selector) {
