@@ -280,11 +280,6 @@ header .inner {
   background-color: rgba(0, 0, 0, .2);
 }
 
-
-#visual .swiper-slide.slide0 {
-  background-image: url("../img/main_slider01.jpg");
-}
-
 #visual .swiper-slide.slide1 {
   background-image: url("../img/main_slider03_2000.jpg");
 }
@@ -301,6 +296,9 @@ header .inner {
   background-image: url("../img/main_slider01_2000.jpg");
 }
 
+#visual .swiper-slide.slide5 {
+  background-image: url("../img/main_slider01.jpg");
+}
 
 #visual .movie-introduction {
   width: 100%;
@@ -772,7 +770,7 @@ header .inner {
 #info .top .video-info .text-group .story {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 5;
   overflow: hidden;
   margin-bottom: 20px;
   font-size: 14px;
@@ -1038,6 +1036,14 @@ footer .left ul li:first-child::before {
   display: none;
 }
 
+footer .left ul li:first-child a {
+  padding-left: 0;
+}
+
+footer .left ul li:last-child a {
+  padding-right: 0;
+}
+
 footer .left ul li a {
   color: #8f8f8f;
   font-size: 13px;
@@ -1196,7 +1202,7 @@ footer .right .call span {
   .header__menu.open {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 51px;
     /* left: 0; */
     right: 0;
@@ -1495,6 +1501,15 @@ footer .right .call span {
     width: 32px;
     height: 32px;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  #info .top .video-info .text-group .story {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
   }
 }
 

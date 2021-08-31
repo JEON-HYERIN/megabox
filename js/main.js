@@ -212,9 +212,6 @@ noticeBtnContainer.addEventListener('click', e => {
 });
 
 
-
-
-
 // TOGGLE BUTTON
 const toggleBtn = document.querySelector('.toggle-btn');
 const headerMenuEl = document.querySelector('.header__menu');
@@ -290,8 +287,11 @@ headerMenuEl.addEventListener('click', function (event) {
 
 
 // THIS YEAR
-const thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear();
+const thisYearEls = document.querySelectorAll('.this-year');
+thisYearEls.forEach(thisYearEl => {
+  thisYearEl.textContent = new Date().getFullYear();
+});
+
 
 
 function scrollIntoView (selector) {
