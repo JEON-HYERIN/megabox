@@ -666,16 +666,23 @@ header .inner {
 
 #info .top .video {
   flex-basis: 68%;
-  height: 500px;
   position: relative;
 }
 
-#info .top .video img {
+#info .top .video .video__cover {
+  height: 500px;
+}
+
+/* #info .top .video .video__area {
+  height: 500px;
+} */
+
+#info .top .video .video__cover img {
   width: 100%;
   height: 100%;
 }
 
-#info .top .video > div {
+#info .top .video .video-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -684,9 +691,11 @@ header .inner {
   margin-left: calc(100px / -2);
   margin-top: calc(100px / -2);
   cursor: pointer;
+  text-align: center;
+  line-height: 100px;
 }
 
-#info .top .video > div i {
+#info .top .video .video-btn i {
   color: #90a4ae;
   font-size: 100px;
   opacity: .6;
@@ -1217,10 +1226,7 @@ footer .right .call span {
   /* VISUAL */
   #visual {
     margin-top: 50px;
-    /* max-width: 1200px;
-    margin: 50px auto 0; */
     position: relative;
-    /* overflow: hidden; */
   }
 
   #visual .links {
@@ -1237,10 +1243,6 @@ footer .right .call span {
   #visual .links .right .btn-group .btn {
     width: 60px;
     font-size: 12px;
-  }
-
-  #visual .swiper-slide {
-    /* height: 400px; */
   }
 
   #visual .swiper-slide.slide1 .movie-introduction {
@@ -1279,8 +1281,6 @@ footer .right .call span {
 
   /* MOVIES */
   #movies {
-    /* background-color: #f2f2f2; */
-    /* background-color: #fafafa; */
     background-color: #d9d7e0;
   }
 
@@ -1314,10 +1314,6 @@ footer .right .call span {
     background-color: transparent;
   }
 
-  #movies .swiper-container {
-    /* max-width: 450px; */
-  }
-  
   #movies .swiper-container .swiper-slide .movie {
     border: 1px solid #d9d9d9;
     padding: 10px;
@@ -1397,6 +1393,27 @@ footer .right .call span {
     border-bottom: 4px solid #d9d7e0;
     margin-bottom: 16px;
     box-sizing: border-box;
+    background-color: #f0f0f0;
+  }
+
+  #info .top .video .video__cover,
+  #info .top .video-info {
+    height: 400px;
+  }
+
+  #info .top .video .video-btn {
+    width: 80px;
+    height: 80px;
+    margin-left: calc(80px / -2);
+    margin-top: calc(80px / -2);
+  }
+
+  #info .top .video .video-btn i {
+    font-size: 80px;
+  }
+
+  #info .top .video-info {
+    padding: 8px;
   }
 
   #info .top .video-info .text-group h4 {
