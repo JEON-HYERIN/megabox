@@ -157,7 +157,8 @@ header .inner {
 /* TOGGLE BTN */
 .toggle-btn {
   position: absolute;
-  right: 33px;
+  /* right: 33px; */
+  right: 10px;
   top: 7px;
   font-size: 25px;
   color: #3A0E6A;
@@ -1100,6 +1101,10 @@ footer .right .call span {
     font-size: 20px;
   }
 
+  .inner {
+    overflow: hidden;
+  }
+
   #movies .inner,
   #events .inner,
   #grand-opening .inner,
@@ -1125,6 +1130,7 @@ footer .right .call span {
   header .inner {
     height: 50px;
     padding: 0 12px;
+    /* padding-left: 12px; */
   }
 
   .header__logo a.logo {
@@ -1171,12 +1177,13 @@ footer .right .call span {
     /* max-width: 1200px;
     margin: 50px auto 0; */
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   #visual .links {
     left: 30px;
     top: 370px;
+    width: auto;
   }
 
   #visual .links .left,
@@ -1429,4 +1436,21 @@ footer .right .call span {
     height: 32px;
     font-size: 18px;
   }
+}
+
+@media screen and (max-width: 360px) {
+  footer {
+
+  }
+
+  footer .left ul li a,
+  footer .left .info {
+    font-size: 12px;
+  }
+
+  footer .left .copyright {
+    font-size: 11px;
+  }
+
+
 }
