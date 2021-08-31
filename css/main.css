@@ -534,14 +534,24 @@ header .inner {
 
 #events .event img {
   width: 100%;
+  height: 100%;
 }
 
 #events .event .left {
   flex-basis: 58%;
 }
 
+#events .event .left .city-package {
+  height: 50%;
+}
+
+#events .event .left .city-package img {
+
+}
+
 #events .event .left .season {
   display: flex;
+  height: 50%;
 }
 
 #events .event .left .season .coupon {
@@ -553,7 +563,7 @@ header .inner {
 }
 
 #events .event .right img {
-  height: 100%;
+
 }
 
 
@@ -656,7 +666,7 @@ header .inner {
 
 #info .top .video {
   flex-basis: 68%;
-  max-height: 500px;
+  height: 500px;
 }
 
 #info .top .video img {
@@ -929,16 +939,30 @@ header .inner {
 #info .bottom .inquiry .box .inquiry__top>div:first-child,
 #info .bottom .inquiry .box .inquiry__bottom>div:first-child {
   border-right: 1px solid #dbdbdb;
+  box-sizing: border-box;
 }
 
 #info .bottom .inquiry .box .inquiry__bottom {}
 
-#info .bottom .inquiry .box .inquiry__top>div,
-#info .bottom .inquiry .box .inquiry__bottom>div {
+#info .bottom .inquiry .box .inquiry__top > div,
+#info .bottom .inquiry .box .inquiry__bottom > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   flex-basis: 50%;
-  text-align: center;
-  line-height: 192px;
   cursor: pointer;
+}
+
+#info .bottom .inquiry .box .inquiry__top > div i,
+#info .bottom .inquiry .box .inquiry__bottom > div i {
+  font-size: 50px;
+  color: #90a4ae;
+}
+
+#info .bottom .inquiry .box .inquiry__top > div .text,
+#info .bottom .inquiry .box .inquiry__bottom > div .text {
+  line-height: 2em;
 }
 
 
