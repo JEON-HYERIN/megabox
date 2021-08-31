@@ -281,6 +281,7 @@ headerMenuEl.addEventListener('click', function (event) {
   if (link === null) {
     return;
   } else {
+    headerMenuEl.classList.remove('open');
     scrollIntoView(link);
   }
 });
