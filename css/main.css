@@ -317,6 +317,7 @@ header .inner {
 }
 
 #visual .swiper-slide.slide2 .movie-introduction h3 span {
+  display: block;
   color: #bbb;
   font-size: 50px;
   /* opacity: .8; */
@@ -363,6 +364,8 @@ header .inner {
   margin-top: calc(50px / -2);
   z-index: 3;
   cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 #visual .swiper-prev {
