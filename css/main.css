@@ -667,11 +667,29 @@ header .inner {
 #info .top .video {
   flex-basis: 68%;
   height: 500px;
+  position: relative;
 }
 
 #info .top .video img {
   width: 100%;
   height: 100%;
+}
+
+#info .top .video > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: calc(100px / -2);
+  margin-top: calc(100px / -2);
+  cursor: pointer;
+}
+
+#info .top .video > div i {
+  color: #90a4ae;
+  font-size: 100px;
+  opacity: .6;
 }
 
 #info .top .video-info {
@@ -963,6 +981,7 @@ header .inner {
 #info .bottom .inquiry .box .inquiry__top > div .text,
 #info .bottom .inquiry .box .inquiry__bottom > div .text {
   line-height: 2em;
+  color: #666;
 }
 
 
